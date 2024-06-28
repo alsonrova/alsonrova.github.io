@@ -9,6 +9,9 @@ function Navbar() {
        <NavLink to={"/project"} className={"font-semibold text-xl hover:bg-white/30 hover:backdrop-brightness-50 hover:backdrop-blur-xl rounded p-1 transition-all"}>
           Project
        </NavLink>
+       <NavLink to={"/project"} className={"font-semibold text-xl hover:bg-white/30 hover:backdrop-brightness-50 hover:backdrop-blur-xl rounded p-1 transition-all"}>
+          Project
+       </NavLink>
     </div>
   )
 }
