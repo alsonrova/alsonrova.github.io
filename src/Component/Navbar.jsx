@@ -3,7 +3,7 @@ import NavbarItem from "./NavbarItem"
 
 function Navbar() {
   return (
-    <div className="w-full h-[5vh] flex items-center justify-center gap-5">
+    <div className="w-full h-[5vh] flex items-center justify-center gap-5 z-10">
        <NavbarItem link={"/"} text={"Home"} />
        <NavbarItem link={"/project"} text={"Project"} />
        <NavbarItem link={"/hobbies"} text={"Hobbies"} />
