@@ -1,20 +1,32 @@
 import ProjectBackgroundFragment from "./ProjectBackgroundFragment"
+import apiImage from "../../src/assets/api.png";
+import crmImage from "../../src/assets/crm.png";
+import domaineImage from "../../src/assets/domaine.png";
+import livreOuvertImage from "../../src/assets/livre-ouvert.png";
+import outilsImage from "../../src/assets/outils-de-conception.png";
+import curseurImage from "../../src/assets/curseur.png";
+import baliseSeoImage from "../../src/assets/balise-seo.png";
+import baliseHtmlImage from "../../src/assets/balise-html.png";
+import deploiementImage from "../../src/assets/deploiement.png";
+import fuseeImage from "../../src/assets/fusee.png";
+import aspectVisuelImage from "../../src/assets/aspect-visuel.png";
+import directionImage from "../../src/assets/direction.png";
 
 function ProjectBackground() {
     const srcArray = [
-        "../../src/assets/api.png",
-        "../../src/assets/crm.png",
-        "../../src/assets/domaine.png",
-        "../../src/assets/livre-ouvert.png",
-        "../../src/assets/outils-de-conception.png",
-        "../../src/assets/curseur.png",
-        "../../src/assets/balise-seo.png",
-        "../../src/assets/balise-html.png",
-        "../../src/assets/deploiement.png",
-        "../../src/assets/fusee.png",
-        "../../src/assets/aspect-visuel.png",
-        "../../src/assets/direction.png",
-    ]
+        apiImage,
+        crmImage,
+        domaineImage,
+        livreOuvertImage,
+        outilsImage,
+        curseurImage,
+        baliseSeoImage,
+        baliseHtmlImage,
+        deploiementImage,
+        fuseeImage,
+        aspectVisuelImage,
+        directionImage,
+    ];
   return (
     <div className="w-full fixed h-screen top-40 overflow-hidden flex gap-5 flex-wrap justify-start items-start"
         >
