@@ -1,16 +1,27 @@
 import { motion } from "framer-motion"
-function ProjectCard({title,url,status,description,image,logo}) {
+import ProjectModal from "./ProjectModal"
+function ProjectCard({id,title,url,status,description,image,icon,isShow, setIsShow,selector
+}) {
+  function showModal(){
+    selector(id)
+    setIsShow(true)
+  }
   return (
     <motion.div 
     initial={{ opacity: 0, y: 20 }}  
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.2 }}      
     whileHover={{ scale: 1.1 }}
-    className="w-[290px] min-h-[380px] bg-slate-300/50 rounded-xl overflow-hidden flex flex-col items-center z-20 drop-shadow-md">
-        <div className="w-full h-[140px] bg-slate-400 overflow-hidden">
+    onClick={()=>showModal()}
+    className="w-[290px] min-h-[380px] bg-slate-300/30 rounded-xl overflow-hidden flex flex-col items-center z-20 drop-shadow-md backdrop-blur-sm"
+    >
+        <div className="w-full h-[140px] overflow-hidden">
             <img className="h-full w-full object-cover"/>
         </div>
-        <h1>{title}</h1>
+        <h1>{title}2</h1>
+        <h2
+        
+        >More details</h2>
         <p>
 
         </p>
