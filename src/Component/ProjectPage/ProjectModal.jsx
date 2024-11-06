@@ -1,8 +1,21 @@
 import { motion,AnimatePresence  } from "framer-motion"
+import { useRef,useState,useEffect } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa"
 import { IoMdClose } from "react-icons/io";
 
 function ProjectModal({project,isShow,setIsShow}) {
+  const imageRef = useRef(null);
+  const [dragConstraints, setDragConstraints] = useState({ top: 0, bottom: 0 });
+
+  useEffect(() => {
+    if (imageRef.current) {
+      const imageHeight = imageRef.current.offsetHeight
+      const containerHeight = 300
+      const topConstraint = Math.min(0, containerHeight - imageHeight)
+      setDragConstraints({ top: topConstraint, bottom: 0 })
+    }
+  }, [isShow,dragConstraints]);
+
   return (
     <AnimatePresence>
       {isShow && (
@@ -47,7 +60,17 @@ function ProjectModal({project,isShow,setIsShow}) {
                 {project.description}
               </div>
             </div>
-            <div className="w-1/2"></div>
+            <div className="w-1/2 flex justify-center">
+              <motion.div 
+              whileHover={{scale:1.04}}
+              className="lg:w-[500px] lg:mt-5 bg-slate-50 h-[300px] overflow-hidden rounded-md">
+                <motion.img
+                ref={imageRef}
+                drag="y"
+                dragConstraints={dragConstraints}
+                src={project.image}/>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       )}

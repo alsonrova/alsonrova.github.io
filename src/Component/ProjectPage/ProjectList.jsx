@@ -16,14 +16,15 @@ function ProjectList() {
   return (
     <>
       <div className="flex flex-wrap lg:p-20 p-10 gap-20 justify-center z-20">
-        <ProjectCard title="Investissement Locatif" id={0} isShow={showModal} setIsShow={setShowModal} selector={setSelector}/>
-        <ProjectCard title="MathPrepa" image id={1} isShow={showModal} setIsShow={setShowModal} selector={setSelector}/>
-        <ProjectCard title="R2C Association" image/>
+        {Project.map((project,index)=>{
+          return <ProjectCard title={project.title} id={project.id} isShow={showModal} setIsShow={setShowModal} selector={setSelector}/>
+        })}
+        {/* <ProjectCard title="R2C Association" image/>
         <ProjectCard title="NextJob"/>
         <ProjectCard title="FastPizza"/>
         <ProjectCard title="My Lit"/>
         <ProjectCard title="My portfolio"/>
-        <ProjectCard title="Alliance Francaise"/>
+        <ProjectCard title="Alliance Francaise"/> */}
       </div>
       <ProjectModal project={Project[selector]} isShow={showModal} setIsShow={setShowModal} />
     </>   

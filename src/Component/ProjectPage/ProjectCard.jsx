@@ -18,7 +18,7 @@ function ProjectCard({id,title,url,status,description,image,icon,isShow, setIsSh
         <div className="w-full h-[140px] overflow-hidden">
             <img className="h-full w-full object-cover"/>
         </div>
-        <h1>{title}2</h1>
+        <h1>{title}</h1>
         <h2
         
         >More details</h2>
