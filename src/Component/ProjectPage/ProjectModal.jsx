@@ -25,17 +25,17 @@ function ProjectModal({project,isShow,setIsShow}) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 25 }}
             transition={{ duration: 0.2 }}
-            className="w-[320px] lg:w-[1200px] h-[620px] bg-slate-100/60 backdrop-blur shadow rounded-sm rounded-ss-xl flex relative"
+            className="w-[320px] lg:w-[1200px] h-[620px] bg-slate-100/60 backdrop-blur shadow rounded-sm rounded-ss-xl flex flex-wrap relative"
           >
             <motion.div
               whileHover={{ scale: 1.4 }}
-              className="absolute top-3 right-4 text-2xl text-red-700 bg-slate-800/20 rounded-md cursor-pointer"
+              className="absolute top-3 right-4 text-2xl text-red-700 bg-slate-800/20 rounded-md cursor-pointer z-10"
               onClick={() => setIsShow(false)}
             >
               <IoMdClose />
               <IoMdClose className="absolute top-0 animate-ping" />
             </motion.div>
-            <div className="w-1/2 px-2 py-1">
+            <div className="w-full lg:w-1/2 px-2 py-1 h-2/3 lg:h-auto">
               <h1 className="uppercase text-4xl flex items-center gap-2">
                 <img src={project.icon} className="w-10 h-10 animate-pulse" alt="project icon"/>
                 {project.title}
@@ -60,10 +60,10 @@ function ProjectModal({project,isShow,setIsShow}) {
                 {project.description}
               </div>
             </div>
-            <div className="w-1/2 flex justify-center">
+            <div className="w-full lg:w-1/2 h-1/3 lg:h-auto flex justify-center -order-1 lg:order-1">
               <motion.div 
               whileHover={{scale:1.04}}
-              className="lg:w-[500px] lg:mt-5 bg-slate-50 h-[300px] overflow-hidden rounded-md">
+              className="lg:w-[500px] w-[300px] lg:mt-5 bg-slate-50 lg:h-[300px] h-[200px] overflow-hidden rounded-md ">
                 <motion.img
                 ref={imageRef}
                 drag="y"

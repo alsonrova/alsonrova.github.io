@@ -1,5 +1,6 @@
 import investIcon from "/assets/investlocatif_icon.svg"
 import investFullScreen from "/assets/investissementlocatifFullscreen.png"
+import mathprepaFullScreen from "/assets/mathprepaFullScreen.png"
 
 const Project = [
     {
@@ -17,7 +18,7 @@ const Project = [
       url: "https://www.math-prepa.fr/",
       status : "En ligne",
       description : ["Investissement Locatif est une marque déposée qui vise à aider les gens à integrer le monde de l'investissement immobilier.", "Grace à une plateforme pensé de A à Z pour ce besoin, elle "],
-      image : "skflsjq",
+      image : mathprepaFullScreen,
       icon : investIcon
     }
   ]

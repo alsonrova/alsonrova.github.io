@@ -6,8 +6,8 @@ function Navbar() {
     <div className="w-full h-[5vh] flex items-center justify-center gap-5 z-10">
        <NavbarItem link={"/"} text={"Home"} />
        <NavbarItem link={"/project"} text={"Project"} />
-       <NavbarItem link={"/hobbies"} text={"Hobbies"} />
        <NavbarItem link={"/skills"} text={"Skills"} />
+       <NavbarItem link={"/hobbies"} text={"Hobbies"} />
        <NavbarItem link={"/contact"} text={"Contact"} />
     </div>
   )
