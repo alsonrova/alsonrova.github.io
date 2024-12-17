@@ -1,0 +1,36 @@
+/* Appliquer la personnalisation à tout le document */
+html {
+    scrollbar-width: thin; /* Pour Firefox */
+    scrollbar-color: #666 #555; /* Couleurs pour Firefox */
+  }
+  
+  /* Scrollbar pour Chrome, Edge et Opera */
+  ::-webkit-scrollbar {
+    width: 12px; /* Largeur verticale */
+    height: 12px; /* Hauteur horizontale */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #F0F0F0; /* Couleur du fond de la barre */
+    border-radius: 10px; /* Coins arrondis */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #4CAF50; /* Couleur de la poignée */
+    border-radius: 10px; /* Coins arrondis */
+    border: 2px solid #F0F0F0; /* Bord autour de la poignée */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #45A049; /* Couleur lors du survol */
+  }
+  
+  /* Scrollbar visible uniquement au survol (facultatif) */
+  body:hover ::-webkit-scrollbar {
+    opacity: 1;
+  }
+  
+  body ::-webkit-scrollbar {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }

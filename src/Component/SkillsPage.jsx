@@ -50,7 +50,7 @@ function SkillsPage() {
   }
   
   return (
-    <div className="w-screen h-[90vh] overflow-hidden">
+    <div className="w-screen h-[90vh] overflow-x-hidden">
       <h1 className="w-full text-2xl font-semibold text-center mt-2">
         Mes Skills
       </h1>
