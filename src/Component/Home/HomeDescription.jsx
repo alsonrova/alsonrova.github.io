@@ -9,12 +9,15 @@ function HomeDescription() {
         transition={{ duration: 0.2, ease: "easeOut" }} 
         
     >
-        <h1 className="text-xl font-medium flex">Je suis un <TitleDynamical /></h1>
+        <h1 className="text-xl font-medium flex">I'm <TitleDynamical /></h1>
         <p>
-          RANDRIA Rova Julio Alson, Développeur Fullstack Javascript et PHP
+          RANDRIA Rova, I'm a Web Developper since 3 years.
         </p>
         <p>
-          Je peux travailler sur l'intégration de vos pages, l'implémentation de vos features les plus folles, 
+          Let me join you for the creation of your landing page, your personnal dashboard, your personnal blog or many else 
+        </p>
+        <p>
+          I'm passionate with technology and helping people reaching their achievements. 
         </p>
     </motion.div>
   )

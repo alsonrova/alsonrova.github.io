@@ -15,12 +15,11 @@ function ProjectCard({id,title,url,status,description,image,icon,isShow, setIsSh
     onClick={()=>showModal()}
     className="w-[290px] min-h-[380px] bg-slate-300/30 rounded-xl overflow-hidden flex flex-col items-center z-20 drop-shadow-md backdrop-blur-sm"
     >
-        <div className="w-full h-[140px] overflow-hidden">
-            <img className="h-full w-full object-cover"/>
+        <div className="w-full h-[140px] overflow-hidden object-contain">
+            <img src={image} className="h-full w-full object-cover object-top"/>
         </div>
         <h1>{title}</h1>
         <h2
-        
         >More details</h2>
         <p>
 

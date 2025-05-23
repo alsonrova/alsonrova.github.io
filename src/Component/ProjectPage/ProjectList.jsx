@@ -17,7 +17,7 @@ function ProjectList() {
     <>
       <div className="flex flex-wrap lg:p-20 p-10 gap-20 justify-center z-20">
         {Project.map((project,index)=>{
-          return <ProjectCard title={project.title} id={project.id} isShow={showModal} setIsShow={setShowModal} selector={setSelector}/>
+          return <ProjectCard title={project.title} id={project.id} isShow={showModal} image= {project.image} setIsShow={setShowModal} selector={setSelector}/>
         })}
         {/* <ProjectCard title="R2C Association" image/>
         <ProjectCard title="NextJob"/>
