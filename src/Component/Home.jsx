@@ -1,6 +1,5 @@
 import HomeDescription from "./Home/HomeDescription"
 import homeImage from "/assets/myroom.png"
-import symfony from "/assets/symfony.svg"
 import { motion } from "framer-motion"
 function Home() {
   return (

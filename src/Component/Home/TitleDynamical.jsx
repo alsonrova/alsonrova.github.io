@@ -3,11 +3,13 @@ import { useEffect, useState } from "react";
 
 function TitleDynamical() {
     const titleTable = [
-        "Developpeur",
+        "Developper",
+        "FrontEnd Developper",
         "Database Engineer",
-        "Passionné",
+        "Passionnate",
         "Designer",
-        "Geek"
+        "Geek",
+        "Musician"
     ];
 
     const [title, setTitle] = useState(titleTable[0]);

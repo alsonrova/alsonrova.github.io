@@ -13,7 +13,7 @@ function HomeDescription() {
         <p>
           RANDRIA Rova, I'm a Web Developper since 3 years.
         </p>
-        <p>
+        <p className="text-center">
           Let me join you for the creation of your landing page, your personnal dashboard, your personnal blog or many else 
         </p>
         <p>
