@@ -48,7 +48,7 @@ function Home() {
         },
         modes: {
           push: {
-            quantity: 4,
+            quantity: 2,
           },
           repulse: {
             distance: 200,
@@ -60,12 +60,19 @@ function Home() {
         color: {
           value: "#ffffff",
         },
-        links: {
-          color: "#ffffff",
-          distance: 150,
+        glow: {
           enable: true,
-          opacity: 0.5,
-          width: 1,
+          color: "#ffffff",
+          radius: 2
+        },
+        shadow: {
+          enable: true,
+          color: "#ffffff",
+          blur: 5,
+          offset: {
+            x: 0,
+            y: 0
+          }
         },
         move: {
           direction: "none",
@@ -74,26 +81,34 @@ function Home() {
             default: "bounce",
           },
           random: false,
-          speed: 6,
+          speed: 2,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 150,
         },
         opacity: {
-          value: 0.5,
+          value: { min: 0.3, max: 0.4}, // Valeur de base aléatoire
+            animation: {
+              enable: true,
+              speed: 1,
+              minimumValue: 0.3,
+              sync: false, // Chaque particule anime de façon indépendante
+            },
+          
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 0.5, max: 3 },
         },
       },
       detectRetina: true,
+      
     }),
     [],
   );
