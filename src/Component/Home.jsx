@@ -2,13 +2,13 @@ import HomeDescription from "./Home/HomeDescription"
 import homeImage from "/assets/myroom.png"
 import { motion } from "framer-motion"
 import { useCallback } from "react"
-import Particles from "react-tsparticles"
-import { loadFull } from "tsparticles"
+import Particles from "@tsparticles/react"
+import { loadSlim } from "@tsparticles/slim"
 
 function Home() {
   const particlesInit = useCallback(async (engine) => {
     try {
-      await loadFull(engine)
+      await loadSlim(engine)
     } catch (error) {
       console.error("Erreur lors de l'initialisation des particules:", error)
     }
@@ -32,7 +32,10 @@ function Home() {
           id="tsparticles"
           init={particlesInit}
           options={{
-            fullScreen: true,
+            fullScreen: {
+              enable: true,
+              zIndex: 0
+            },
             background: {
               color: {
                 value: "transparent",
@@ -40,26 +43,26 @@ function Home() {
             },
             interactivity: {
               events: {
-                  onClick: {
-                      enable: true,
-                      mode: "push",
-                  },
-                  onHover: {
-                      enable: true,
-                      mode: "repulse",
-                  },
-                  resize: true,
+                onClick: {
+                  enable: true,
+                  mode: "push",
+                },
+                onHover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+                resize: true,
               },
               modes: {
-                  push: {
-                      quantity: 4,
-                  },
-                  repulse: {
-                      distance: 100,
-                      duration: 0.4,
-                  },
+                push: {
+                  quantity: 4,
+                },
+                repulse: {
+                  distance: 100,
+                  duration: 0.4,
+                },
               },
-          },
+            },
             particles: {
               number: {
                 value: 100,
