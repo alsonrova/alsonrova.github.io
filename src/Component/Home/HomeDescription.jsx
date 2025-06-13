@@ -3,7 +3,7 @@ import TitleDynamical from "./TitleDynamical"
 function HomeDescription() {
   return (
     <motion.div
-        className="w-1/2 flex h-[90vh] flex-col items-center justify-center"
+        className="w-1/2 flex h-[90vh] flex-col items-center justify-center relative z-20"
         initial={{ opacity: 0, scale: 0.8, x: -50 }}
         animate={{ opacity: 1, scale: 1, x: 0 }} 
         transition={{ duration: 0.2, ease: "easeOut" }} 

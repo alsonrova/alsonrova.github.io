@@ -117,15 +117,15 @@ function Home() {
       <motion.div 
       initial={{scale: 0.8,opacity:0.5,translateY:0.5}}
       animate={{scale: 1,opacity:1,translateY:1}}
-      className="w-1/2 flex items-center justify-center relative z-10">
-        <img className="lg:w-[500px] w-[300px] rounded-lg z-10"  src={homeImage}/>
+      className="w-1/2 flex items-center justify-center relative z-20">
+        <img className="lg:w-[500px] w-[300px] rounded-lg z-20"  src={homeImage}/>
         <motion.img 
          initial={{ scale: 1.05 }}
         animate={{ opacity: 1.09 }}
         className="lg:w-[500px] w-[300px] rounded-lg absolute translate-y-2 scale-105 blur-md " src={homeImage}/>
       </motion.div>
       <HomeDescription />
-      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }}>
           <Particles
             id="tsparticles"
             particlesLoaded={particlesLoaded}

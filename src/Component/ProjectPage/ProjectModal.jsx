@@ -130,7 +130,7 @@ function ProjectModal({project,isShow,setIsShow}) {
                 </div>
               </div>
               <div className="">
-                <h2 className="text-2xl mt-2 font-bold font-mono">Projects Technology</h2>
+                <h2 className="text-2xl mt-2 font-bold font-mono">Project Technologies</h2>
                 <div className="flex flex-wrap pl-2 items-center"> 
                     {
                       project.technology.map((technology, key)=>{
